@@ -14,6 +14,8 @@
 		792DDA1C2243B67100B97120 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792DDA1B2243B67100B97120 /* AboutUsViewController.swift */; };
 		792DDA1F2243BF2500B97120 /* PortfolioCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792DDA1E2243BF2500B97120 /* PortfolioCollectionViewCell.swift */; };
 		792DDA212243BF4000B97120 /* PortfolioCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792DDA202243BF4000B97120 /* PortfolioCollectionViewController.swift */; };
+		792DDA242243F7E600B97120 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792DDA232243F7E600B97120 /* ContactUsViewController.swift */; };
+		792DDA272243F8E600B97120 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792DDA262243F8E600B97120 /* MapKit.framework */; };
 		798120852242AC21009B7B96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798120842242AC21009B7B96 /* AppDelegate.swift */; };
 		798120872242AC21009B7B96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798120862242AC21009B7B96 /* ViewController.swift */; };
 		7981208A2242AC21009B7B96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 798120882242AC21009B7B96 /* Main.storyboard */; };
@@ -48,6 +50,8 @@
 		792DDA1B2243B67100B97120 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		792DDA1E2243BF2500B97120 /* PortfolioCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioCollectionViewCell.swift; sourceTree = "<group>"; };
 		792DDA202243BF4000B97120 /* PortfolioCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioCollectionViewController.swift; sourceTree = "<group>"; };
+		792DDA232243F7E600B97120 /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
+		792DDA262243F8E600B97120 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		798120812242AC21009B7B96 /* Business App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Business App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		798120842242AC21009B7B96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		798120862242AC21009B7B96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				792DDA272243F8E600B97120 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +121,22 @@
 			path = Portfolio;
 			sourceTree = "<group>";
 		};
+		792DDA222243F79900B97120 /* Contact Us */ = {
+			isa = PBXGroup;
+			children = (
+				792DDA232243F7E600B97120 /* ContactUsViewController.swift */,
+			);
+			path = "Contact Us";
+			sourceTree = "<group>";
+		};
+		792DDA252243F8E500B97120 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				792DDA262243F8E600B97120 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		798120782242AC21009B7B96 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +144,7 @@
 				798120982242AC22009B7B96 /* Business AppTests */,
 				798120A32242AC22009B7B96 /* Business AppUITests */,
 				798120822242AC21009B7B96 /* Products */,
+				792DDA252243F8E500B97120 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +164,7 @@
 				7902A2EE224340DD0014B4D0 /* Services */,
 				792DDA1A2243B63F00B97120 /* About Us */,
 				792DDA1D2243BCED00B97120 /* Portfolio */,
+				792DDA222243F79900B97120 /* Contact Us */,
 				798120842242AC21009B7B96 /* AppDelegate.swift */,
 				798120862242AC21009B7B96 /* ViewController.swift */,
 				798120882242AC21009B7B96 /* Main.storyboard */,
@@ -310,6 +333,7 @@
 				7902A2F622434FBB0014B4D0 /* ServicesViewController.swift in Sources */,
 				792DDA1C2243B67100B97120 /* AboutUsViewController.swift in Sources */,
 				798120852242AC21009B7B96 /* AppDelegate.swift in Sources */,
+				792DDA242243F7E600B97120 /* ContactUsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

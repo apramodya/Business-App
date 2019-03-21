@@ -11,6 +11,7 @@
 		7902A2F2224341460014B4D0 /* ServicesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7902A2F1224341460014B4D0 /* ServicesTableViewCell.swift */; };
 		7902A2F4224342CB0014B4D0 /* ServiceList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7902A2F3224342CB0014B4D0 /* ServiceList.plist */; };
 		7902A2F622434FBB0014B4D0 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7902A2F522434FBB0014B4D0 /* ServicesViewController.swift */; };
+		792DDA1C2243B67100B97120 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792DDA1B2243B67100B97120 /* AboutUsViewController.swift */; };
 		798120852242AC21009B7B96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798120842242AC21009B7B96 /* AppDelegate.swift */; };
 		798120872242AC21009B7B96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798120862242AC21009B7B96 /* ViewController.swift */; };
 		7981208A2242AC21009B7B96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 798120882242AC21009B7B96 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 		7902A2F1224341460014B4D0 /* ServicesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTableViewCell.swift; sourceTree = "<group>"; };
 		7902A2F3224342CB0014B4D0 /* ServiceList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ServiceList.plist; sourceTree = "<group>"; };
 		7902A2F522434FBB0014B4D0 /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
+		792DDA1B2243B67100B97120 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		798120812242AC21009B7B96 /* Business App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Business App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		798120842242AC21009B7B96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		798120862242AC21009B7B96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +95,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		792DDA1A2243B63F00B97120 /* About Us */ = {
+			isa = PBXGroup;
+			children = (
+				792DDA1B2243B67100B97120 /* AboutUsViewController.swift */,
+			);
+			path = "About Us";
+			sourceTree = "<group>";
+		};
 		798120782242AC21009B7B96 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +126,7 @@
 		798120832242AC21009B7B96 /* Business App */ = {
 			isa = PBXGroup;
 			children = (
+				792DDA1A2243B63F00B97120 /* About Us */,
 				7902A2EE224340DD0014B4D0 /* Services */,
 				798120842242AC21009B7B96 /* AppDelegate.swift */,
 				798120862242AC21009B7B96 /* ViewController.swift */,
@@ -281,6 +292,7 @@
 				7902A2F2224341460014B4D0 /* ServicesTableViewCell.swift in Sources */,
 				7902A2F0224341140014B4D0 /* ServicesTableViewController.swift in Sources */,
 				7902A2F622434FBB0014B4D0 /* ServicesViewController.swift in Sources */,
+				792DDA1C2243B67100B97120 /* AboutUsViewController.swift in Sources */,
 				798120852242AC21009B7B96 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

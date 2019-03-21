@@ -192,30 +192,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2112.8000000000002" y="588.75562218890559"/>
+            <point key="canvasLocation" x="3052" y="588.75562218890559"/>
         </scene>
-        <!--Portfolio-->
+        <!--Protfolio-->
         <scene sceneID="0o8-PK-7pY">
             <objects>
-                <collectionViewController id="gNh-QC-0E5" sceneMemberID="viewController">
+                <collectionViewController id="gNh-QC-0E5" customClass="PortfolioCollectionViewController" customModule="Business_App" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="1eX-Dr-jA3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DNP-r0-fe5">
-                            <size key="itemSize" width="50" height="50"/>
+                            <size key="itemSize" width="170" height="140"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" id="KNA-BE-EGm">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" reuseIdentifier="Cell" id="KNA-BE-EGm" customClass="PortfolioCollectionViewCell" customModule="Business_App" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="170" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="170" height="140"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KvJ-Fv-OsX">
+                                            <rect key="frame" x="0.0" y="0.0" width="170" height="27"/>
+                                        </imageView>
+                                    </subviews>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="KvJ-Fv-OsX" firstAttribute="top" secondItem="KNA-BE-EGm" secondAttribute="top" id="3ac-HQ-2hR"/>
+                                    <constraint firstAttribute="trailing" secondItem="KvJ-Fv-OsX" secondAttribute="trailing" id="Hae-v8-tPx"/>
+                                    <constraint firstItem="KvJ-Fv-OsX" firstAttribute="leading" secondItem="KNA-BE-EGm" secondAttribute="leading" id="IFx-13-KdK"/>
+                                    <constraint firstAttribute="bottom" secondItem="KvJ-Fv-OsX" secondAttribute="bottom" id="wPh-k7-56v"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="cellImage" destination="KvJ-Fv-OsX" id="wmz-mt-YR7"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -223,11 +237,11 @@
                             <outlet property="delegate" destination="gNh-QC-0E5" id="KyM-UN-wuz"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Portfolio" image="Tab4" id="y0d-5a-pHG"/>
+                    <navigationItem key="navigationItem" title="Protfolio" id="eY9-WI-NJO"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DHH-9r-iLY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="837"/>
+            <point key="canvasLocation" x="1480.8" y="956.67166416791611"/>
         </scene>
         <!--Contact Us-->
         <scene sceneID="VXx-2V-UwA">
@@ -377,7 +391,7 @@
                         <segue destination="kbD-1T-BY1" kind="relationship" relationship="viewControllers" id="1XS-AC-cdb"/>
                         <segue destination="SMG-Z1-gon" kind="relationship" relationship="viewControllers" id="leX-WJ-XBS"/>
                         <segue destination="Dzd-dp-kse" kind="relationship" relationship="viewControllers" id="Yv4-4c-i5U"/>
-                        <segue destination="gNh-QC-0E5" kind="relationship" relationship="viewControllers" id="61l-v4-s6d"/>
+                        <segue destination="FMs-ep-RFA" kind="relationship" relationship="viewControllers" id="61l-v4-s6d"/>
                         <segue destination="uid-SV-VBK" kind="relationship" relationship="viewControllers" id="o9d-zn-0Nc"/>
                     </connections>
                 </tabBarController>
@@ -463,6 +477,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z3U-8z-U32" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="-654"/>
+        </scene>
+        <!--Portfolio-->
+        <scene sceneID="3Dw-sO-Vhl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FMs-ep-RFA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Portfolio" image="Tab4" id="y0d-5a-pHG"/>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="fMy-8v-QDj">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.20392156859999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="21"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gNh-QC-0E5" kind="relationship" relationship="rootViewController" id="sZg-3e-jZ6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vxQ-0n-Ftw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="956.67166416791611"/>
         </scene>
     </scenes>
     <resources>

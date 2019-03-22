@@ -41,6 +41,8 @@ class ContactUsViewController: UIViewController {
         pinAnnotation.subtitle = "55, New Upp Changi Rd"
         
         mapView.addAnnotation(pinAnnotation)
+        
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
 

@@ -25,6 +25,11 @@
 		798120A52242AC22009B7B96 /* Business_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798120A42242AC22009B7B96 /* Business_AppUITests.swift */; };
 		79DBE8F52245226200D4ED66 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DBE8F42245226200D4ED66 /* EmailViewController.swift */; };
 		79DBE8F72245265A00D4ED66 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79DBE8F62245265A00D4ED66 /* MessageUI.framework */; };
+		79DBE8FA22452C6E00D4ED66 /* SocialTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DBE8F922452C6E00D4ED66 /* SocialTableViewController.swift */; };
+		79DBE8FC22452C8400D4ED66 /* SocialTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DBE8FB22452C8400D4ED66 /* SocialTableViewCell.swift */; };
+		79DBE8FE22452D7600D4ED66 /* SocialList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79DBE8FD22452D7600D4ED66 /* SocialList.plist */; };
+		79DBE90022454DE300D4ED66 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DBE8FF22454DE300D4ED66 /* SocialViewController.swift */; };
+		79DBE90222454F1C00D4ED66 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79DBE90122454F1C00D4ED66 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +74,11 @@
 		798120A62242AC22009B7B96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79DBE8F42245226200D4ED66 /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 		79DBE8F62245265A00D4ED66 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		79DBE8F922452C6E00D4ED66 /* SocialTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialTableViewController.swift; sourceTree = "<group>"; };
+		79DBE8FB22452C8400D4ED66 /* SocialTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialTableViewCell.swift; sourceTree = "<group>"; };
+		79DBE8FD22452D7600D4ED66 /* SocialList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SocialList.plist; sourceTree = "<group>"; };
+		79DBE8FF22454DE300D4ED66 /* SocialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
+		79DBE90122454F1C00D4ED66 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79DBE90222454F1C00D4ED66 /* WebKit.framework in Frameworks */,
 				79DBE8F72245265A00D4ED66 /* MessageUI.framework in Frameworks */,
 				792DDA272243F8E600B97120 /* MapKit.framework in Frameworks */,
 			);
@@ -138,6 +149,7 @@
 		792DDA252243F8E500B97120 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				79DBE90122454F1C00D4ED66 /* WebKit.framework */,
 				79DBE8F62245265A00D4ED66 /* MessageUI.framework */,
 				792DDA262243F8E600B97120 /* MapKit.framework */,
 			);
@@ -168,13 +180,14 @@
 		798120832242AC21009B7B96 /* Business App */ = {
 			isa = PBXGroup;
 			children = (
+				798120862242AC21009B7B96 /* ViewController.swift */,
 				7902A2EE224340DD0014B4D0 /* Services */,
 				792DDA1A2243B63F00B97120 /* About Us */,
 				792DDA1D2243BCED00B97120 /* Portfolio */,
 				792DDA222243F79900B97120 /* Contact Us */,
+				79DBE8F822452C3800D4ED66 /* Social */,
 				798120882242AC21009B7B96 /* Main.storyboard */,
 				798120842242AC21009B7B96 /* AppDelegate.swift */,
-				798120862242AC21009B7B96 /* ViewController.swift */,
 				7981208B2242AC22009B7B96 /* Assets.xcassets */,
 				7981208D2242AC22009B7B96 /* LaunchScreen.storyboard */,
 				798120902242AC22009B7B96 /* Info.plist */,
@@ -198,6 +211,17 @@
 				798120A62242AC22009B7B96 /* Info.plist */,
 			);
 			path = "Business AppUITests";
+			sourceTree = "<group>";
+		};
+		79DBE8F822452C3800D4ED66 /* Social */ = {
+			isa = PBXGroup;
+			children = (
+				79DBE8F922452C6E00D4ED66 /* SocialTableViewController.swift */,
+				79DBE8FB22452C8400D4ED66 /* SocialTableViewCell.swift */,
+				79DBE8FF22454DE300D4ED66 /* SocialViewController.swift */,
+				79DBE8FD22452D7600D4ED66 /* SocialList.plist */,
+			);
+			path = Social;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7902A2F4224342CB0014B4D0 /* ServiceList.plist in Resources */,
+				79DBE8FE22452D7600D4ED66 /* SocialList.plist in Resources */,
 				7981208F2242AC22009B7B96 /* LaunchScreen.storyboard in Resources */,
 				7981208C2242AC22009B7B96 /* Assets.xcassets in Resources */,
 				7981208A2242AC21009B7B96 /* Main.storyboard in Resources */,
@@ -334,6 +359,7 @@
 			files = (
 				798120872242AC21009B7B96 /* ViewController.swift in Sources */,
 				792DDA1F2243BF2500B97120 /* PortfolioCollectionViewCell.swift in Sources */,
+				79DBE90022454DE300D4ED66 /* SocialViewController.swift in Sources */,
 				7902A2F2224341460014B4D0 /* ServicesTableViewCell.swift in Sources */,
 				792DDA212243BF4000B97120 /* PortfolioCollectionViewController.swift in Sources */,
 				7902A2F0224341140014B4D0 /* ServicesTableViewController.swift in Sources */,
@@ -341,6 +367,8 @@
 				792DDA1C2243B67100B97120 /* AboutUsViewController.swift in Sources */,
 				798120852242AC21009B7B96 /* AppDelegate.swift in Sources */,
 				792DDA242243F7E600B97120 /* ContactUsViewController.swift in Sources */,
+				79DBE8FA22452C6E00D4ED66 /* SocialTableViewController.swift in Sources */,
+				79DBE8FC22452C8400D4ED66 /* SocialTableViewCell.swift in Sources */,
 				79DBE8F52245226200D4ED66 /* EmailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

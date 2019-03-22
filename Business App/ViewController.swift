@@ -25,6 +25,8 @@ class ViewController: UIViewController {
         button3.layer.cornerRadius = 5
         button4.layer.cornerRadius = 5
         button5.layer.cornerRadius = 5
+        
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
 
     @IBAction func services(_ sender: Any) {
